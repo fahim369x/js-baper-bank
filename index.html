@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BaperBank</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(171, 215, 253);
+    }
+  </style>
+  <body>
+    <header class="text-4xl font-semibold text-center mt-7">
+      Please login to <span class="text-purple-700">Baper Bank</span>!!!
+    </header>
+    <main>
+      <section class="w-6/12 mx-auto block">
+        <h1 class="mt-12">Please Login</h1>
+        <input
+          id="emailAction"
+          type="text"
+          class="w-[100%] my-5 p-2 rounded-lg"
+          placeholder="Enter your email"
+        />
+        <input
+          id="passAction"
+          type="password"
+          class="w-[100%] p-2 rounded-lg"
+          placeholder="Enter your password"
+        />
+        <button
+          id="loginBtn"
+          class="bg-purple-500 text-white px-5 rounded-lg py-2 mt-5"
+        >
+          Login
+        </button>
+      </section>
+    </main>
+    <script>
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function () {
+          const emailAction = document.getElementById("emailAction");
+          const emailValue = emailAction.value;
+
+          const passAction = document.getElementById("passAction");
+          const passValue = passAction.value;
+
+          if (emailValue == "fahim@gmail.com" && passValue == "12345") {
+            window.location.href = "user.html";
+          } else {
+            alert("Wrong information");
+          }
+        });
+    </script>
+  </body>
+</html>

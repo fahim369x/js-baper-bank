@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Baper Bank | user.fahim | admin</title>
+    <style>
+      body {
+        background-color: rgba(40, 4, 241, 0.178);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-4xl font-semibold text-center mt-7">
+      Welcome to <span class="text-purple-700">Baper Bank</span>!!!
+    </header>
+    <main>
+      <div
+        class="grid grid-cols-3 w-9/12 gap-4 mx-auto mt-10 text-3xl text-white"
+      >
+        <div class="bg-sky-500 p-8 rounded-xl">
+          <h1>Deposit</h1>
+          <p>$<span id="deposit-total">00</span></p>
+        </div>
+        <div class="bg-amber-500 p-8 rounded-xl text-3xl text-white">
+          <h1>withdraw Balance</h1>
+          <p>$00</p>
+        </div>
+        <div class="bg-purple-600 p-8 rounded-xl text-3xl text-white">
+          <h1>Balance</h1>
+          <p>$ <span id="balance-total">1240</span></p>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 w-7/12 gap-4 mx-auto mt-10">
+        <div class="bg-green-500 p-8 rounded-xl">
+          <h1 class="text-3xl text-white">Please Deposit</h1>
+          <input
+            type="text"
+            id="depositField"
+            class="p-1 w-60 rounded-lg mt-5"
+            placeholder="Enter your Deposit amount"
+          />
+          <button
+            id="deposit-btn"
+            class="p-1 rounded-md bg-sky-600 text-white w-3/12"
+          >
+            Deposits
+          </button>
+        </div>
+        <div class="bg-red-400 p-8 rounded-xl">
+          <h1 class="text-3xl text-white">withdraw</h1>
+          <input
+            type="text"
+            id="withdraw"
+            class="p-1 w-60 rounded-lg mt-5"
+            placeholder="Enter your withdraw amount"
+          />
+          <button
+            id="withdraw-btn"
+            class="text-white p-1 rounded-md bg-cyan-500 w-3/12"
+          >
+            Withdraw
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="user.js"></script>
+  </body>
+</html>
